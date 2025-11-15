@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Small utilities / tweaks used by the layout */
+html, body, #svelte { height: 100%; }
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* Example: make table text a little nicer */
+table { border-collapse: collapse; }
