@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
+
   type User = {
     id: number;
     name: string;
@@ -9,9 +10,11 @@
     address: { city: string };
     company: { name: string };
   };
+
   let users: User[] = [];
   let loading: boolean = true;
   let error: string | null = null;
+
   onMount(async () => {
     try {
       const response = await fetch(
